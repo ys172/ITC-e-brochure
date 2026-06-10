@@ -1,5 +1,5 @@
 :root {
-  --page-width: 318px;
+  --page-width: 100vw;
   --band-height: 47px;
   --paper: #ffffff;
   --outside: #eeeeee;
@@ -393,6 +393,10 @@ body.menu-open .menu-backdrop {
 }
 
 @media (min-width: 700px) {
+  :root {
+    --page-width: 390px;
+  }
+
   .top-band,
   .home-scroll {
     box-shadow: 0 0 48px rgba(0, 0, 0, 0.16);
