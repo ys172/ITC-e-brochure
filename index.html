@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>ITC H5 Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-band" aria-label="Top navigation">
+      <button class="icon-button logo-button" type="button" aria-label="Home">
+        <img src="assets/icon_itc_logo_button.png" alt="" />
+      </button>
+      <button class="icon-button menu-button" type="button" aria-label="Open menu">
+        <img src="assets/icon_menu_button.png" alt="" />
+      </button>
+    </header>
+
+    <aside class="side-menu" aria-label="Content menu" aria-hidden="true">
+      <nav class="menu-timeline">
+        <button type="button" data-target="top">
+          <span>OPENING / INTRO</span>
+          <small>首页 / 介绍</small>
+        </button>
+        <button type="button" data-target="location">
+          <span>LOCATION</span>
+          <small>地理位置 / 周边</small>
+        </button>
+        <button type="button" data-target="transportation">
+          <span>TRANSPORTATION</span>
+          <small>交通</small>
+        </button>
+        <button type="button" data-target="office">
+          <span>OFFICE / INTRO</span>
+          <small>办公 / 介绍</small>
+        </button>
+        <button type="button" data-target="amenities">
+          <span>AMENITIES</span>
+          <small>配套</small>
+        </button>
+        <button type="button" data-target="team">
+          <span>TEAM</span>
+          <small>团队</small>
+        </button>
+        <button type="button" data-target="contact">
+          <span>CONTACT</span>
+          <small>联系</small>
+        </button>
+      </nav>
+      <strong>content structure</strong>
+    </aside>
+    <div class="menu-backdrop" aria-hidden="true"></div>
+
+    <main class="home-scroll">
+      <img
+        id="top"
+        class="home-content"
+        src="assets/homepage_content_below_band.png"
+        alt="ITC home content"
+      />
+
+      <section id="location" class="location-section" aria-label="Location">
+        <img class="location-header-image" src="assets/location/location_header_block.png" alt="The dynamic and historically rich district" />
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="assets/location/location_slide_01.png" alt="Location image 1" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/location/location_slide_02.png" alt="Location image 2" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/location/location_slide_03.png" alt="Location image 3" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/location/location_slide_04.png" alt="Location image 4" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/location/location_slide_05.png" alt="Location image 5" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/location/location_slide_06.png" alt="Location image 6" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/location/location_slide_07.png" alt="Location image 7" draggable="false" /></div>
+            </div>
+          </div>
+          <div class="carousel-dots" aria-label="Location slide controls"></div>
+        </div>
+
+        <img class="location-text-image" src="assets/location/location_text_panel.png" alt="Location description" />
+        <img class="location-map-image" src="assets/location/location_map_panel.png" alt="Location map" />
+        <div class="location-map-dots" aria-hidden="true">
+          <span class="active"></span><span></span><span></span><span></span>
+        </div>
+        <div class="location-rule"></div>
+      </section>
+
+      <section id="transportation" class="transportation-section" aria-label="Transportation">
+        <img class="transportation-header-image" src="assets/transportation/transportation_header_block.png" alt="5 metro lines converge" />
+
+        <div class="carousel transport-photo-carousel" data-carousel>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="assets/transportation/transport_photo_slide_01.png" alt="Metro train" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/transportation/transport_photo_slide_02.png" alt="Station platform" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/transportation/transport_photo_slide_03.png" alt="High-speed train" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/transportation/transport_photo_slide_04.png" alt="Airport lounge" draggable="false" /></div>
+            </div>
+          </div>
+          <div class="carousel-dots" aria-label="Transportation photo controls"></div>
+        </div>
+
+        <img class="transportation-text-image" src="assets/transportation/transportation_text_panel.png" alt="Transportation description" />
+
+        <div class="carousel transport-map-carousel" data-carousel>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="assets/transportation/transport_map_slide_01.png" alt="Metro connection map" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/transportation/transport_map_slide_02.png" alt="Project circulation map" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/transportation/transport_map_slide_03.png" alt="Project surrounding map" draggable="false" /></div>
+            </div>
+          </div>
+          <div class="carousel-dots" aria-label="Transportation map controls"></div>
+        </div>
+
+        <div class="carousel transport-time-carousel" data-carousel>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="assets/transportation/transport_time_slide_01.png" alt="Airport drive times" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/transportation/transport_time_slide_02.png" alt="Station travel times" draggable="false" /></div>
+            </div>
+          </div>
+          <div class="carousel-dots" aria-label="Transportation time controls"></div>
+        </div>
+
+        <div class="transportation-rule"></div>
+      </section>
+
+      <section id="office" class="office-section" aria-label="Office introduction">
+        <img class="office-page-image" src="assets/office/office_intro_page_aligned.png" alt="Office introduction page" draggable="false" />
+      </section>
+
+      <section id="amenities" class="amenities-section" aria-label="Amenities">
+        <img class="section-image" src="assets/amenities/amenities_header_block.png" alt="Beyond work" draggable="false" />
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="assets/amenities/amenities_retail_slide_01.png" alt="Retail image 1" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/amenities/amenities_retail_slide_02.png" alt="Retail image 2" draggable="false" /></div>
+            </div>
+          </div>
+          <div class="carousel-dots" aria-label="Amenities retail slide controls"></div>
+        </div>
+
+        <img class="section-image" src="assets/amenities/amenities_retail_text.png" alt="ITC Maison introduction" draggable="false" />
+        <img class="section-image" src="assets/amenities/amenities_hotel_title.png" alt="Andaz" draggable="false" />
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="assets/amenities/amenities_hotel_slide_01.png" alt="Hotel image 1" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/amenities/amenities_hotel_slide_02.png" alt="Hotel image 2" draggable="false" /></div>
+            </div>
+          </div>
+          <div class="carousel-dots" aria-label="Amenities hotel slide controls"></div>
+        </div>
+
+        <img class="section-image" src="assets/amenities/amenities_hotel_text.png" alt="Andaz hotel introduction" draggable="false" />
+        <div class="section-rule"></div>
+      </section>
+
+      <section id="team" class="team-section" aria-label="Team">
+        <img class="section-image" src="assets/team/team_header_block.png" alt="One perfect team" draggable="false" />
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="assets/team/team_intro_slide_01.png" alt="Team image 1" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/team/team_intro_slide_02.png" alt="Team image 2" draggable="false" /></div>
+            </div>
+          </div>
+          <div class="carousel-dots" aria-label="Team intro slide controls"></div>
+        </div>
+
+        <img class="section-image" src="assets/team/team_shkp_text.png" alt="Sun Hung Kai Properties introduction" draggable="false" />
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="assets/team/team_chart_slide_01.png" alt="Team chart 1" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/team/team_chart_slide_02.png" alt="Team chart 2" draggable="false" /></div>
+            </div>
+          </div>
+          <div class="carousel-dots" aria-label="Team chart slide controls"></div>
+        </div>
+
+        <img class="section-image" src="assets/team/team_pelli_text.png" alt="Pelli Clarke and Partners introduction" draggable="false" />
+
+        <div class="carousel" data-carousel>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="carousel-slide"><img src="assets/team/team_arch_slide_01.png" alt="Architecture image 1" draggable="false" /></div>
+              <div class="carousel-slide"><img src="assets/team/team_arch_slide_02.png" alt="Architecture image 2" draggable="false" /></div>
+            </div>
+          </div>
+          <div class="carousel-dots" aria-label="Team architecture slide controls"></div>
+        </div>
+
+        <div class="section-rule"></div>
+      </section>
+
+      <section id="contact" class="contact-section" aria-label="Contact us">
+        <img class="section-image" src="assets/contact/contact_top.png" alt="Contact us" draggable="false" />
+        <form class="contact-form">
+          <label>
+            <span>First Name*</span>
+            <input type="text" name="firstName" autocomplete="given-name" />
+          </label>
+          <label>
+            <span>Last Name*</span>
+            <input type="text" name="lastName" autocomplete="family-name" />
+          </label>
+          <label>
+            <span>Email*</span>
+            <input type="email" name="email" autocomplete="email" />
+          </label>
+          <label>
+            <span>Phone*</span>
+            <input type="tel" name="phone" autocomplete="tel" />
+          </label>
+          <label>
+            <span>Title*</span>
+            <input type="text" name="title" autocomplete="organization-title" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="4"></textarea>
+          </label>
+        </form>
+        <img class="section-image" src="assets/contact/contact_qr_footer.png" alt="QR code" draggable="false" />
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
