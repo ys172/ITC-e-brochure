@@ -547,9 +547,24 @@ body.menu-open {
 }
 
 .location-hero {
+  position: relative;
+  z-index: 2;
   padding: 46px 7.5% 22px;
   background: var(--blue);
   color: #ffffff;
+}
+
+.location-hero::after,
+.transport-hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  z-index: 3;
+  height: 3px;
+  background: var(--blue);
+  pointer-events: none;
 }
 
 .location-hero h2 {
@@ -771,6 +786,8 @@ body.menu-open {
 }
 
 .transport-hero {
+  position: relative;
+  z-index: 2;
   padding: 36px 7.5% 78px;
   background: var(--blue);
   color: #ffffff;
