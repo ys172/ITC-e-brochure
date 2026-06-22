@@ -112,11 +112,11 @@ body.menu-open {
 
 .content-menu {
   position: fixed;
-  top: 0;
+  top: calc(var(--band-height) + env(safe-area-inset-top));
   left: 50%;
-  z-index: 20;
+  z-index: 9;
   width: min(100vw, var(--page-width));
-  height: 100dvh;
+  height: calc(100dvh - var(--band-height) - env(safe-area-inset-top));
   transform: translateX(-50%);
   overflow: hidden;
   pointer-events: none;
@@ -129,7 +129,7 @@ body.menu-open {
   overflow-y: auto;
   overscroll-behavior: contain;
   padding-bottom: calc(48px + env(safe-area-inset-bottom));
-  background: var(--gold);
+  background: var(--blue);
   color: #ffffff;
   transform: translateX(100%);
   transition: transform 420ms ease;
@@ -146,7 +146,7 @@ body.menu-open {
 
 .content-menu-header {
   position: absolute;
-  top: env(safe-area-inset-top);
+  top: 0;
   left: 0;
   z-index: 2;
   width: 100%;
@@ -156,14 +156,14 @@ body.menu-open {
 
 .content-menu-close {
   position: absolute;
-  top: 20px;
-  left: clamp(24px, 7.4vw, 36px);
-  width: 64px;
-  height: 64px;
+  top: 9px;
+  right: 14px;
+  width: 48px;
+  height: 54px;
   padding: 0;
   border: 0;
   background: transparent;
-  color: #ffffff;
+  color: var(--gold);
   transform: rotate(360deg);
   transform-origin: center;
   transition: transform 420ms ease;
@@ -179,9 +179,9 @@ body.menu-open {
   content: "";
   position: absolute;
   top: 50%;
-  left: 7px;
-  width: 50px;
-  height: 2px;
+  left: 5px;
+  width: 39px;
+  height: 3px;
   background: currentColor;
   transform-origin: center;
 }
@@ -195,22 +195,17 @@ body.menu-open {
 }
 
 .content-menu-logo {
-  position: absolute;
-  top: 24px;
-  right: clamp(28px, 8vw, 40px);
-  width: 52px;
-  height: auto;
-  filter: brightness(0) invert(1);
-  pointer-events: none;
+  display: none;
 }
 
 .content-menu-list {
   display: flex;
   flex-direction: column;
-  gap: clamp(18px, 2.8vh, 26px);
+  align-items: flex-end;
+  gap: clamp(22px, 3.6vh, 32px);
   width: 100%;
-  margin: calc(132px + env(safe-area-inset-top)) 0 0;
-  padding: 0 24px 0 clamp(40px, 12.3vw, 48px);
+  margin: 76px 0 0;
+  padding: 0 18px 0 28px;
   list-style: none;
 }
 
@@ -221,7 +216,7 @@ body.menu-open {
   border: 0;
   background: transparent;
   color: #ffffff;
-  text-align: left;
+  text-align: right;
 }
 
 .content-menu-text {
@@ -235,15 +230,15 @@ body.menu-open {
 
 .content-menu-title {
   font-family: var(--font-heading-en);
-  font-size: clamp(24px, 6.4vw, 29px);
-  font-weight: 700;
-  line-height: 0.98;
+  font-size: clamp(19px, 5.5vw, 23px);
+  font-weight: 500;
+  line-height: 1;
   letter-spacing: 0;
 }
 
 .content-menu-cn {
-  margin-top: 5px;
-  font: 400 clamp(17px, 4.8vw, 21px)/1.08 var(--font-cn);
+  margin-top: 7px;
+  font: 400 clamp(16px, 4.8vw, 20px)/1 var(--font-cn);
   letter-spacing: 0;
 }
 
